@@ -31,7 +31,23 @@
     <title>Employee Directory</title>
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div class="container">
+      <jumbotron class= "primary bg-light">
+        <div class="container-fluid">
+          <h1>Employee Directory</h1>
+          <h6>Click on carrots to filter by heading or use the search box to narrow your results</h6>
+        </div>
+      </jumbotron>
+    </div>
+
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        </form>
+      </div>
+    </nav>
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
