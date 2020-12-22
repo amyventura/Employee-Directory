@@ -5,6 +5,7 @@ function Users(props) {
     // button to filter by name 
     // onClick -> this.sortUsers
     return <div > users view </div>;
+    
 }
 
 export default Users;
