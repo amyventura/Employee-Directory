@@ -1,7 +1,7 @@
 import React from 'react';
 import Form from './Form';
 import Users from './Users';
-
+import Nav from './Nav';
 
 class Container extends React.Component {
     state = {
@@ -24,6 +24,7 @@ class Container extends React.Component {
     render() {
         return ( 
             <div className = "App" >
+            <Nav />
             <Form />
             <Users />
             </div>
