@@ -2,22 +2,15 @@ import React from "react";
 
 function Form(props) {
 
-return (
-  <form>
-    <div className="form-group">
-      <label htmlFor="search"></label>
-      <input
-        onChange={props.handleInputChange}
-        value={props.search}
-        name="search"
-        type="text"
-        className="form-control col-3 mx-auto"
+  return (
+    <form className="form-inline my-2 my-lg-0">
+      <input className="form-control mr-sm-2"
+        type="search"
         placeholder="Search"
-        id="search"
-      />
-    </div>
-  </form>
-);
+        aria-label="Search"
+        />
+    </form>
+  );
 }
 
 // function SearchForm(props) {
