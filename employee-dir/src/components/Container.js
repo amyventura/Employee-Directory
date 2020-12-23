@@ -2,7 +2,7 @@ import React from 'react';
 import Form from './Form';
 import Users from './Users';
 import Nav from './Nav';
-import Heading from './Heading';
+import Header from './Header';
 
 class Container extends React.Component {
     state = {
@@ -27,7 +27,7 @@ class Container extends React.Component {
             <div className = "App" >
             <Nav />
             <Form />
-            <Heading />
+            <Header />
             <Users />
             </div>
         );

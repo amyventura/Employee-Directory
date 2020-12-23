@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Heading() {
+function Header() {
     return(
         <div>
             <h4>Name, Technologies, DOB, Email</h4>
@@ -8,4 +8,4 @@ function Heading() {
     )
 };
 
-export default Heading;
+export default Header;
