@@ -4,37 +4,18 @@ import React from "react";
 function Form(props) {
 
   return (
+    // className="form-control col-2 mx-auto"
     <form className="form-inline my-2 my-lg-0">
       <input className="form-control mr-sm-2"
-        type="search"
+        onChange={props.handleInputChange}
+        value={props.Term}
+        name="searchTerm"
+        type="text"
         placeholder="Search"
-        aria-label="Search"
+        id="search"
         />
     </form>
   );
 }
-
-// function SearchForm(props) {
-//   return (
-//     <form>
-//       <div className="form-group">
-//         <label htmlFor="search">Search:</label>
-//         <input
-//           onChange={props.handleInputChange}
-//           value={props.value}
-//           name="search"
-//           type="text"
-//           className="form-control"
-//           placeholder="Search For a Movie"
-//           id="search"
-//         />
-//         <br />
-//         <button onClick={props.handleFormSubmit} className="btn btn-primary">
-//           Search
-//         </button>
-//       </div>
-//     </form>
-//   );
-// }
 
 export default Form;

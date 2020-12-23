@@ -9,18 +9,12 @@ function Users(props) {
             <div className="card">
                 <div className="card-body">
                     <p className="card-text">
-                        <ul>
-                            <li>Employee:</li>
-                            <li>picture</li>
-                            <li>name</li>
-                            <li>DOB</li>
-                        </ul>
+                        Employee
                     </p>
                 </div>
             </div>
         </div>
     )
-    
 }
 
 {/* <ul className="list-group">
