@@ -1,37 +1,7 @@
-import React from 'react';
-import Form from './Form';
-import Users from './Users';
-import Nav from './Nav';
-import Header from './Header';
+import React from "react";
 
-class Container extends React.Component {
-    state = {
-        allUsers: [],
-        filteredUsers: [],
-        searchTerm: ""
-    }
-    // component did mount
-    // call API (utils)
-    // setState
-    // allUsers: [],
-    // filteredUsers: [],
-    // handleInputChange
-    // change (setState) searchTerm
-    // filter users based on searchTerm
-    // sort if relevant
-    // sortUsers
-    // using js sort (by string, or if you want to sort by number (DOB))
-    // optionally implement, up or down
-    render() {
-        return ( 
-            <div className = "App" >
-            <Nav />
-            <Form />
-            <Header />
-            <Users />
-            </div>
-        );
-    }
+function Container(props) {
+  return <div className="container" style={props.style}>{props.children}</div>;
 }
 
 export default Container;
